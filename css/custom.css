@@ -1,0 +1,691 @@
+
+/********************
+  GENERAL STYLES
+*******************/
+body 
+{
+  padding-bottom:100px;
+}
+
+h2
+{
+  padding-top:40px;
+  padding-bottom:33px;
+}
+
+/**************************/
+
+/************************
+  HEADING
+**************************/
+
+.blueBlackBar
+{
+  height:5px;
+  width:100%;
+}
+
+.blueBlackBar:before,
+.blueBlackBar:after
+{
+  content:" ";
+  display:table;
+}
+
+.blueBlackBar:after
+{
+  clear:both;
+}
+
+.blueBlackBar > div
+{
+  float:left;
+  height:100%;
+}
+
+.blueBlackBar > div:first-child
+{
+  width:30%;
+  background:blue;
+}
+
+.blueBlackBar > div + div
+{
+  width:70%;
+  background:black;
+}
+
+#brandTitle
+{
+  color:#222;
+  font-weight:bold;
+  font-size:1.4em;
+  letter-spacing:-1px;
+}
+
+#indexPageNavbar li:hover
+{
+  background-color:#ddd;
+}
+
+#indexPageNavbar li
+{
+  margin:0 1em;
+  padding:0 8px;
+}
+
+#indexPageNavbar li:last-child
+{
+  margin:0 0 0 1em;
+}
+
+#indexPageNavbar li:hover a 
+{
+  color:#000;
+}
+
+#indexPageNavbar li a
+{
+  color:#0a0a90;
+  font-weight:bold;
+}
+
+#indexPageHeader h1
+{
+  font-size:47px;
+  letter-spacing:-1px;
+  color:#222;
+  margin-bottom:20px;
+}
+
+/**************************/
+
+/**************************
+  MAIN CONTENT - GENERAL STYLING
+**************************/
+
+#mainContent
+{
+  border-bottom:1px solid #ddd;
+}
+
+/*************************
+  MAIN CONTENT - MAIN ARTICLE
+*************************/
+
+#indexPageArticle p 
+{
+  font-size:20px;
+  color:rgba(100,100,100,.8);
+}
+
+#indexPageArticle p + p
+{
+  margin-top:20px;
+}
+
+/***************************/
+
+/***************************
+  MAIN CONTENT - SIGN UP FORM
+**************************/
+
+#indexPageAside input[type='text']
+{
+  border:1px solid #ddd;
+  border-radius:3px;
+  font-size:18px;
+  padding:12px 0 12px 15px;
+  font-weight:normal;
+  width:68%;
+}
+
+#indexPageAside input#signUpFree
+{
+  background-color:#0069cc;
+  color:white;
+  border:none;
+  border-radius:2px;
+  font-size:17px;
+  font-weight:bold;
+  padding:13px;
+  margin-left:16px;
+  width:27%;
+}
+
+.orDivider
+{
+  height:20px;
+  display:block;
+  margin-top:21px;
+  border-top:1px solid black;
+  position:relative;
+}
+
+.orDivider:before
+{
+  content:"OR";
+  position:absolute;
+  left:45%;
+  top:-14px;
+  background-color:white;
+  padding:5px 10px;
+}
+
+#signUpGoogle
+{
+  display:block;
+  width:100%;
+  background-color:#bbb;
+  border:none;
+  color:white;
+  font-weight:bold;
+  font-size:17px;
+  padding:12px 0;
+  border-radius:5px;
+  position:relative;
+}
+
+#googleSignUpContainer
+{
+  position:relative;
+}
+
+#googleLogo 
+{
+  position:absolute;
+  left:0;
+  top:0;
+  font-size:27px;
+  padding:8px 20px 10px 12px;
+  margin:0;
+  line-height:1;
+  color:white;
+  border-right:1px solid white;
+  height:48px;
+}
+
+#googleLogo:before
+{
+  content:"+";
+  position:absolute;
+  left:58%;
+  top:31%;
+  color:white;
+  font-size:18px;
+  font-weight:normal;
+}
+
+#indexPageAside p
+{
+  font-size:17px;
+  color:#aaa;
+  margin-top:30px;
+}
+
+#indexPageAside
+{
+  margin-bottom:30px;
+}
+
+/**************************/
+
+/***************************
+  MAIN CONTENT - SECOND ARTICLE
+****************************/
+
+#indexPageArticle h2
+{
+  margin-bottom:32px;
+  clear:both;
+  border-top:1px solid #ccc;
+}
+
+/****************************
+  CUSTOM CAROUSEL
+****************************/
+
+#indexPageCarousel
+{
+  padding-bottom:50px;
+  border-bottom:1px solid #ddd;
+}
+
+#indexPageCarousel .carouselItems,
+#companyImgCarousel .carouselItems
+{
+  list-style:none;
+  padding:0;
+  margin:0;
+  margin-bottom:30px;
+}
+
+#indexPageCarousel .carouselItem
+{
+  margin-left:26px;
+}
+
+#indexPageCarousel li
+{
+ 
+  position:relative;
+}
+
+#indexPageCarousel .carouselItem p:first-child
+{
+  padding-right:96px;
+}
+
+#indexPageCarousel li > div
+{
+  height:100%;
+}
+
+#indexPageCarousel .quoteImgContainer img
+{
+  float:left;
+  margin-right:15px;
+}
+
+#indexPageCarousel .quoteImgContainer img + div
+{
+  color:red;
+  margin-top:-5px;
+  margin-bottom:0;
+}
+
+#indexPageCarousel .quoteImgContainer img + div + div
+{
+  margin-top:0;
+  color:#888;
+  font-size:12px;
+  width:250px;
+}
+
+/***************************/
+
+/**************************
+  MAIN CONTENT - THIRD ARTICLE
+*************************/
+
+#highlights h4
+{
+  color:#c00;
+  font-size:20px;
+  font-weight:normal;
+  line-height:30px;
+  margin-top:0;
+}
+
+.highlightPerks
+{
+  padding-right:0;
+}
+
+#highlights p 
+{
+  font-size:17px;
+}
+
+.highlightPerks .perk
+{
+  margin-bottom:40px;
+}
+
+.highlightPerks .perkInnerContent
+{
+  padding-left:5px;
+}
+
+.perk .glyphicon 
+{
+  font-size:25px;
+}
+
+/***************************/
+
+/***************************
+  MAIN CONTENT - THIRD ARTICLE - ASIDE
+***************************/
+
+#highlightsInstruction
+{
+  padding-left:40px;
+  border-left:1px solid #ddd;
+  padding-bottom:100px;
+}
+
+.highlightsNumber span
+{
+  font-style:italic;
+  font-size:3.3em;
+}
+
+#highlightsInstruction [class*='perk']
+{
+  padding-bottom:26px;
+}
+
+#highlightsInstruction [class*='perk']:not(.perkLast)
+{
+  border-bottom:1px solid #ddd;
+}
+
+#highlightsInstruction [class*='perk']:not(.perkFirst)
+{
+  padding-top:32px;
+}
+
+/*************************/
+
+/*************************
+  MAIN CONTENT - SECOND CAROUSEL
+***************************/
+
+#companyImgCarousel
+{
+  min-height:170px;
+}
+
+.companyImg
+{
+  height:64px;
+  border-right:1px solid #ddd;
+}
+
+.companyImg > div
+{
+  height:100%;
+  background-position:center;
+}
+
+.companyImg:last-child
+{
+  border-right:none;
+}
+
+.olark
+{
+  background:url('../img/olark.png') no-repeat;
+}
+
+.reddit
+{
+  background:url('../img/reddit.png') no-repeat;
+}
+
+.mozilla
+{
+  background:url('../img/mozilla.png') no-repeat;
+}
+
+.vungle
+{
+  background:url('../img/vungle.png') no-repeat;
+}
+
+.amEx
+{
+  background:url('../img/americanexpress.png') no-repeat;
+}
+
+.shopify
+{
+  background:url('../img/shopify-bw.png') no-repeat;
+}
+
+.foursquare
+{
+  background:url('../img/foursquare-bw.png') no-repeat;
+}
+
+.harvest
+{
+  background:url('../img/harvest.png') no-repeat;
+}
+
+/*************************
+  OTHER STYLINGS
+*************************/
+
+#showcaseLink p 
+{
+  font-size:13px;
+  margin-top:25px;
+  padding-right:30px;
+}
+
+#showcaseLink .glyphicon
+{
+  font-size:13px;
+}
+
+/*******************/
+
+
+/*************************
+  INDEX FOOTER
+*************************/
+
+#preFooterSignUp h3
+{
+  margin-top:0;
+  margin-bottom:0;
+  font-size:33px;
+}
+
+#preFooterSignUp p 
+{
+  margin-top:0;
+}
+
+#preFooterSignUp
+{
+  padding-top:70px;
+  padding-bottom:43px;
+  border-bottom:1px solid #ddd;
+  border-top:1px solid #ddd;
+}
+
+#preFooterSignUp a
+{
+  color:#fff;
+  font-size:20px;
+  padding:10px 60px 10px 60px;
+  text-shadow: 0px 0px 2px #000;
+  background:-webkit-linear-gradient(top, #0084ff,#004f99);
+}
+
+footer
+{
+  padding-top:50px;
+}
+
+footer ul
+{
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+.footerSubHeading
+{
+  font-weight:bold;
+  color:#aaa;
+}
+
+.footerLogo
+{
+  font-weight:bold;
+}
+
+/**************************
+  MEDIA QUERIES
+***************************/
+
+@media (max-width:1200px){
+    #highlightsInstruction
+    {
+      border-left:none;
+    }
+
+    .highlightPerks
+    {
+      border-right:1px solid #ddd;
+    }
+
+    .companyImg
+    {
+      padding:0;
+    }
+}
+
+@media (min-width:992px){
+  #indexPageCarousel
+  {
+    min-width:312px;
+  }
+
+  #indexPageCarousel li
+  {
+     height:200px;
+  }
+
+  #indexPageCarousel .quoteImgContainer
+  {
+    position:absolute;
+    bottom:0;
+    width:100%;
+  }
+
+}
+
+@media (max-width:992px){
+
+  #indexPageAside
+  {
+    margin-bottom:0;
+  }
+
+ h2 
+ {
+    margin-top:0;
+    padding-top:10px;
+    margin-bottom:0;
+    padding-bottom:15px;
+ }
+
+ #indexPageNavbar li 
+ {
+    margin:0;
+ }
+
+ #indexPageCarousel 
+ {
+    margin-right:0;
+ }
+
+ #indexPageCarousel .carouselItem > div:not(:last-child)
+ {
+    clear:both;
+    padding-bottom:3em;
+    margin-bottom:2em;
+    border-bottom:1px solid #ddd;
+ }
+
+ #indexPageCarousel .carouselItem > div > p
+ {
+  margin-bottom:2em;
+ }
+
+ #indexPageCarousel .carouselItem p:first-child
+ {
+  padding-right:0;
+ }
+
+ #highlightsInstruction
+  {
+    border-left:none;
+  }
+
+  .highlightPerks
+  {
+    border-right:none;
+  }
+
+  .highlightPerks h2
+  {
+    margin-top:30px;
+  }
+
+  .companyImg
+  {
+    margin-bottom:60px;
+    border-right:none;
+  }
+
+  #indexPageAside form + p
+  {
+    margin-bottom:2em;
+  }
+
+  h2
+  {
+    margin-bottom:1.5em;
+    margin-top:2em;
+  }
+
+  .highlightPerks h2
+  {
+    margin-top:2em;
+  }
+
+}
+
+@media (max-width:768px){
+
+  h2,
+  #indexPageHeader,
+  #indexPageArticle p,
+  .perk,
+  .perkFirst,
+  .perkLast,
+  #preFooterSignUp,
+  footer
+  {
+    text-align:center;
+  }
+
+  #indexPageNavbar ul > li:last-child
+  {
+    margin:0;
+  }
+
+  #indexPageAside input[type='text']
+  {
+    width:100%;
+  }
+
+  #indexPageAside input#signUpFree
+  {
+    width:100%;
+    margin-left:0;
+    margin-top:20px;
+  }
+
+  #preFooterSignUp a 
+  {
+    display:block;
+    width:70%;
+    float:none!important;
+    margin: 20px auto 0 auto;
+  }
+
+  .footerSubHeading
+  {
+    margin:10px 0;
+  }
+
+}
+
+/****************************/
