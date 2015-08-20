@@ -3,36 +3,29 @@ $('#indexPageArticle2 .carouselItems li:not(.active),#companyImgCarousel .carous
 var carouselDelayFirst = 7000,
     carouselSpeedFirst = 550;
 
-setTimeout(function(){initCarouselFade();},carouselDelayFirst);
+initCarouselFade('.carouselItems',carouselSpeedFirst);
 
 function initCarouselFade(arrayClass, transitionSpeed)
 {
-    var functionLoop;
-    iterateItemFade($('.carouselItems'),carouselSpeedFirst);
-    functionLoop = setTimeout('initCarouselFade()',carouselDelayFirst);
-}
 
-function iterateItemFade(arrayClass,transitionSpeed)
-{
-    var currentItem = arrayClass.find('li.active');
+  setTimeout(function(){
+      var arrayJQ = $(arrayClass),
+          currentItem = arrayJQ.find('li.active');
 
-    currentItem.removeClass('active')
-               .fadeToggle(transitionSpeed);
+      currentItem.removeClass('active')
+                 .fadeToggle(transitionSpeed);
 
-    if(currentItem.is('li:last-child'))
-    {
-        setTimeout(function(){
-            arrayClass.find('li:first-child')
-                      .addClass('active')
-                      .fadeToggle(transitionSpeed);
-        },transitionSpeed);
-    }
-    else
-    {
-        setTimeout(function(){
-            currentItem.next()
-                       .addClass('active')
-                       .fadeToggle(transitionSpeed);
-        },transitionSpeed);
-    }
+      if(currentItem.is('li:last-child'))
+        currentItem = arrayJQ.find('li:first-child');
+      else
+        currentItem = currentItem.next();
+
+      setTimeout(function(){
+        currentItem.addClass('active')
+                   .fadeToggle(transitionSpeed);
+      },500);
+
+      setTimeout('initCarouselFade(\'' + arrayClass + '\',' + transitionSpeed + ')',carouselDelayFirst)
+  },carouselDelayFirst);
+
 }
